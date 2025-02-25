@@ -7,6 +7,7 @@ import { StatusBar } from "expo-status-bar";
 import CustomButton from "@/components/CustomButton";
 import { useRouter } from "expo-router";
 import AppGradient from "@/components/AppGradient";
+import TimerProvider from "@/context/TimerContext";
 
 export default function Index() {
   const router = useRouter();
