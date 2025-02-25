@@ -1,10 +1,18 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
+
 module.exports = {
-  // NOTE: Update this to include the paths to all of your component files.
-  content: ["./app/**/*.{js,jsx,ts,tsx}"],
-  presets: [require("nativewind/preset")],
+  content: [
+    "./App.{js,jsx,ts,tsx}",
+    "./app/**/*.{js,jsx,ts,tsx}", // Include all JS, JSX, TS, and TSX files in the app folder
+    "./components/**/*.{js,jsx,ts,tsx}", // Include all JS, JSX, TS, and TSX files in the components folder]
+    "./app/(tabs)/meditate.tsx",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        rmono: ["Roboto-Mono", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

@@ -37,6 +37,15 @@ const TabLayout = () => {
           ),
         }}
       />
+      <Tabs.Screen
+        name="meditate"
+        options={{
+          tabBarLabel: "Meditate",
+          tabBarIcon: ({ color }) => (
+            <Entypo name="triangle-down" size={24} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 };

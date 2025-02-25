@@ -16,7 +16,7 @@ const CustomButton = ({
 }: CustomButtonProps) => {
   return (
     <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
-      <Text className={`font-bold ${textStyles} `}>{title}</Text>
+      <Text className={`text-3xl font-bold ${textStyles} `}>{title}</Text>
     </TouchableOpacity>
   );
 };
