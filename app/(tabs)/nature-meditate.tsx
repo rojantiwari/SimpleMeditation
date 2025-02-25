@@ -26,7 +26,7 @@ const NatureMeditate = () => {
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) => (
               <Pressable
-                onPress={() => console.log(item.id - 1)}
+                onPress={() => console.log("Pass")}
                 className="h-48 my-3 rounded-2xl overflow-hidden  m-2"
               >
                 <ImageBackground
